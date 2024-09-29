@@ -1,13 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-color: #89089F;
+  --secondary-color: #F1F1F1;
+}
+
+.pink-button {
+  @apply bg-primary-color text-white font-semibold py-2 px-4 text-sm sm:text-base rounded-lg h-[45px] min-w-[122px];
+}
+.pink-outline-button {
+  @apply h-[45px] min-w-[122px] border-[1px] hover:bg-slate-50 active:bg-slate-100 border-primary-color text-primary-color font-semibold py-2 px-4 text-sm sm:text-base rounded-lg;
+}
+.white-button {
+  @apply bg-gray-200 h-[45px] min-w-[122px] hover:bg-gray-300 active:bg-gray-300 text-gray-700 font-semibold py-2 px-4 text-sm sm:text-base rounded-lg;
+}
+.inputTitleStyles {
+  @apply text-[12px] 2xl:text-[14px] font-[400] text-white;
+}
+.inputStyles {
+  @apply bg-[#BA68C8] text-white p-2 w-full rounded-lg placeholder:text-white;
 }
