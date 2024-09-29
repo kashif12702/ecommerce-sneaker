@@ -7,7 +7,6 @@ import ProductForm from "./ProductForm";
 import ProductDeleteForm from "./ProductDeleteForm";
 import { useDispatch } from "react-redux";
 import { addItemToCart } from "../redux/cart";
-import { Link } from "react-router-dom";
 import { getRandomSneakerImage } from "../utils/sneakerImage";
 
 const ProductItem = ({ item, edit }) => {
